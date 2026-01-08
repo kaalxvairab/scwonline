@@ -1,0 +1,31 @@
+/* Gibson font loading */
+@font-face {
+	font-family: 'Gibson';
+	src: url('../font/gibson/Fontspring-DEMO-gibson-regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gibson';
+	src: url('../font/gibson/Fontspring-DEMO-gibson-semibold.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gibson';
+	src: url('../font/gibson/Fontspring-DEMO-gibson-bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Global body font */
+body {
+	font-family: 'Gibson', Arial, Helvetica, sans-serif;
+    max-inline-size: 1440px;
+}
+
