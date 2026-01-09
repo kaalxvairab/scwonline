@@ -85,6 +85,11 @@ button.btn-light-outline {
     background-color: transparent;
     padding: 12px;
 }
+button.btn-light {
+    color: var(--font-color-primary);
+    background-color: transparent;
+    padding: 12px;
+}
 
 
 /* LINKS */
@@ -202,6 +207,10 @@ a.link-btn-dark {
 
 #btn-signup {
     background-color: var(--button-primary-bg);
+}
+
+#mobile-menu{
+    display: none;
 }
 
 
