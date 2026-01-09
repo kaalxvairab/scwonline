@@ -27,6 +27,9 @@ img {
   --font-color-secondary: #1A1A1A;
   --font-color-secondary-mute: rgba(26, 26, 26, 0.7);
 
+  /* BUTTON COLORS */
+  --button-primary-bg: #006252;
+
 }
 
 *::before,
@@ -63,53 +66,28 @@ img {
     color: var(--font-color-secondary-mute);
 }
 
-/* UTILITIES */
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-.row.gap-46 {
-    gap: 46px;
-}
-.row.gap-18 {
-    gap: 18px;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* BUTTONS */
 button {
     cursor: pointer;
     border: none;
-    /* padding: 10px 20px; */
-    border-radius: 10px;
-    font-size: 16px;
-    font-style: regular;
-    transition: background-color 0.3s ease;
-    color: var(--font-color-primary);
+
 }
-
-
-button.btn-primary:hover {
-    background-color: var(--primary-color);
-}
-
-button.btn-primary {
-    background-color: var(--secondary-color);
-    color: var(--font-color-primary);
-}
-
 
 button.btn-dark {
     background-color: var(--dark-color);
     color: var(--font-color-primary);
 }
 
+button.btn-light-outline {
+    border: 1px solid var(--light-color);
+    color: var(--font-color-primary);
+    background-color: transparent;
+    padding: 12px;
+}
+
+
+/* LINKS */
 a{
     cursor: pointer;
     text-decoration: none;
@@ -138,17 +116,46 @@ a.link-btn-dark {
     display: block;
 }
 
+
+/* UTILITIES */
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row.gap-46 {
+    gap: 46px;
+}
+.row.gap-18 {
+    gap: 18px;
+}
+.row.gap-4{
+    gap: 4px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BORDER RADIUS */
 .border-rounded {
     border-radius: 8px;
 }
 
-
+/* FONT SIZE */
 .font-small {
     font-size: 14px;
 }
 .font-medium {
     font-size: 16px;
 }
+
+
+
+
 
 
 /* CUSTOM */
@@ -163,5 +170,43 @@ a.link-btn-dark {
 }
 
 #navbar{
-    padding: 30px 10px 30px 40px;
+    padding: 30px 40px 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#nav-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    color: var(--light-color);
+}
+
+#nav-items ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-items ul li a{
+    padding: 12px;
+    font-weight: 200 ;
+    font-size: 16px;
+}
+
+#btn-signup {
+    background-color: var(--button-primary-bg);
+}
+
+
+.separator-vertical-light {
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: var(--light-color);
+    opacity: 0.25;
 }
