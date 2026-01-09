@@ -19,9 +19,13 @@
         text-align: right;
     }
 
-    #navbar #main-logo,#mobile-menu{
-        width: 50%;
+    #mobile-menu-close{
+        display: none;
     }
+
+    /* #navbar #main-logo,#mobile-menu{
+        width: 50%;
+    } */
 
 
     #navbar{  
@@ -29,7 +33,7 @@
     }
 
     #nav-items {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: end;
         width: 100%;
