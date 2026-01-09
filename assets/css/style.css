@@ -161,3 +161,7 @@ a.link-btn-dark {
     justify-content: space-between;
 
 }
+
+#navbar{
+    padding: 30px 10px 30px 40px;
+}
