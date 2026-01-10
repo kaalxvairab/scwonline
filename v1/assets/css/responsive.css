@@ -1,0 +1,50 @@
+/* Small devices (≥600px) — optional tweaks */
+@media only screen and (min-width: 600px) {
+  /* Add any small tablet adjustments here if needed */
+}
+
+/* Medium/Large devices (≥1024px) — enhance to desktop layout */
+@media only screen and (min-width: 1024px){
+    #top-section {
+        flex-direction: row;
+        padding: 14px 50px;
+        row-gap: 0;
+    }
+
+    #main-logo{
+        width: auto;
+    }
+
+    #navbar{
+        padding: 30px 40px;
+        gap: 16px;
+    }
+
+    #mobile-menu{
+        display: none;
+        text-align: right;
+    }
+
+    #mobile-menu-close{
+        display: none;
+    }
+
+    #nav-items {
+        border-top: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        justify-content: flex-end;
+    }
+
+    #nav-items ul {
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #nav-items ul > li:last-child {
+        display: block;
+    }
+}

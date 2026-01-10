@@ -1,0 +1,242 @@
+
+
+/* Global CSS */
+body {
+   font-family: "Gibson", Arial, sans-serif;
+    max-inline-size: 1440px;
+    margin: 0px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    /* Color Palette */
+  --primary-color: #007B67;
+  --secondary-color: #247C86;
+    --dark-color-mute: #37394B;
+    --dark-color: rgba(0, 0, 0, 0.15);
+    --light-color:#FFFFFF;
+    --light-mute-color: #FCFCFC;
+    --lighter-color: #E1E1E2;
+    
+
+    /* Font Colors */
+  --font-color-primary: #ffffff;
+  --font-color-secondary: #1A1A1A;
+  --font-color-secondary-mute: rgba(26, 26, 26, 0.7);
+
+  /* BUTTON COLORS */
+  --button-primary-bg: #006252;
+
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* background colors */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+.bg-dark {
+    background-color: var(--dark-color);
+}
+.bg-dark-mute {
+    background-color: var(--dark-color-mute);
+}
+.bg-light {
+    background-color: var(--light-color);
+}
+
+/* TEXT COLORS */
+.text-primary {
+    color: var(--font-color-primary);
+}
+.text-secondary {
+    color: var(--font-color-secondary);
+}
+.text-secondary-mute {  
+    color: var(--font-color-secondary-mute);
+}
+
+
+/* BUTTONS */
+button {
+    cursor: pointer;
+    border: none;
+
+}
+
+button.btn-dark {
+    background-color: var(--dark-color);
+    color: var(--font-color-primary);
+}
+
+button.btn-light-outline {
+    border: 1px solid var(--light-color);
+    color: var(--font-color-primary);
+    background-color: transparent;
+    padding: 12px;
+}
+button.btn-light {
+    color: var(--font-color-primary);
+    background-color: transparent;
+    padding: 12px;
+}
+
+
+/* LINKS */
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.link-light {
+    color: var(--light-color);
+}
+a.link-light:hover {
+    text-decoration: underline;
+}
+
+a.link-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+}
+
+a.link-btn-dark {
+    background-color: var(--dark-color);
+    padding: 8px 10px;
+    box-sizing: border-box;
+    color: var(--light-color);
+    display: block;
+}
+
+
+/* UTILITIES */
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row.gap-46 {
+    gap: 46px;
+}
+.row.gap-18 {
+    gap: 18px;
+}
+.row.gap-20 {
+    gap: 20px;
+}
+.row.gap-4{
+    gap: 4px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BORDER RADIUS */
+.border-rounded {
+    border-radius: 8px;
+}
+
+/* FONT SIZE */
+.font-small {
+    font-size: 14px;
+}
+.font-medium {
+    font-size: 16px;
+}
+
+
+
+
+
+
+/* CUSTOM (Mobile-first defaults) */
+#top-section {
+    padding: 12px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+#navbar{
+    padding: 30px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#nav-items{
+    border-top: 1px solid #ffffff;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 20px;
+    color: var(--light-color);
+    transition: all 3s ease-out;
+}
+
+#nav-items ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+#nav-items ul li a{
+    padding: 12px 8px;
+    font-size: 16px;
+}
+
+#btn-signup {
+    background-color: var(--button-primary-bg);
+}
+
+#mobile-menu{
+    display: block;
+    text-align: right;
+}
+
+#mobile-menu-close{
+    display: none;
+}
+
+#main-logo{
+    width: 50%;
+}
+
+#nav-items ul > li:last-child {
+    display: none;
+}
+
+
+.separator-vertical-light {
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: var(--light-color);
+    opacity: 0.25;
+}
