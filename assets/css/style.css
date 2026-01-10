@@ -178,10 +178,11 @@ a.link-btn-dark {
 }
 
 #navbar{
-    padding: 30px 40px 30px 40px;
+    padding: 30px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -192,7 +193,7 @@ a.link-btn-dark {
     justify-content: flex-end;
     gap: 20px;
     color: var(--light-color);
-}
+    transition: all 3s ease-out;}
 
 #nav-items ul {
     list-style-type: none;
